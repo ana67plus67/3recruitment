@@ -1,5 +1,6 @@
 import { Nav } from "./components/Nav";
 import { Hero } from "./components/Hero";
+import { Jobs } from "./components/Jobs";
 import { Bar } from "./components/Bar";
 import { Offers } from "./components/Offers";
 import { Scope } from "./components/Scope";
@@ -12,6 +13,7 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
+        <Jobs />
         <Bar />
         <Offers />
         <Scope />

@@ -18,6 +18,7 @@ npm run preview  # serve the production build
 | `src/data/content.ts` | Every string on the site, plus the fee figures |
 | `src/index.css` | Design tokens and the single accent colour |
 | `src/components/` | One component per section, composed in `src/App.tsx` |
+| `src/data/jobs.ts` | Live roles. Remove each one the day it is filled |
 | `src/data/privacy.ts` | The DPDP notice, rendered at `/privacy.html` |
 
 All copy lives in `content.ts`. Edit there rather than in components.
@@ -72,6 +73,12 @@ an Indian data protection lawyer before relying on it.
 specific hiring process is recruitment and we do offer it. Without that sentence, "no
 career counselling" reads as a refusal to give any feedback, which contradicts the reply
 promise.
+
+**The job board must never go stale.** `src/data/jobs.ts` lists roles we can actually
+submit to. Remove a role the day it is filled — a board showing positions that no longer
+exist is worse than a short board, because candidates find out and stop trusting the rest
+of the page. Never invent a location, a salary band or a company detail; leave the field
+undefined and let the brief go out on request.
 
 ## Intake
 
