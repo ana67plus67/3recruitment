@@ -4,6 +4,7 @@ import { Wordmark } from "./Wordmark";
 export function Privacy() {
   return (
     <>
+      <div aria-hidden="true" className="grad-bar h-1 w-full" />
       <header
         className="sticky z-50 bg-paper/90 backdrop-blur-md"
         style={{ top: "env(safe-area-inset-top, 0px)" }}
@@ -50,7 +51,7 @@ export function Privacy() {
                     >
                       <span
                         aria-hidden="true"
-                        className="mt-[0.72em] h-px w-5 shrink-0 bg-flame"
+                        className="mt-[0.72em] h-px w-5 shrink-0 grad-bar"
                       />
                       {item}
                     </li>

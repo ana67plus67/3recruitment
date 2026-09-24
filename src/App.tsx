@@ -10,6 +10,7 @@ import { Footer } from "./components/Footer";
 export default function App() {
   return (
     <>
+      <div aria-hidden="true" className="grad-bar h-1 w-full" />
       <Nav />
       <main>
         <Hero />

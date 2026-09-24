@@ -5,6 +5,7 @@ import { Wordmark } from "./Wordmark";
 export function Roles() {
   return (
     <>
+      <div aria-hidden="true" className="grad-bar h-1 w-full" />
       <header
         className="sticky z-50 bg-paper/90 backdrop-blur-md"
         style={{ top: "env(safe-area-inset-top, 0px)" }}
@@ -61,7 +62,7 @@ export function Roles() {
                       <li key={item.label} className="flex items-start gap-4">
                         <span
                           aria-hidden="true"
-                          className="mt-[0.72em] h-px w-5 shrink-0 bg-flame"
+                          className="mt-[0.72em] h-px w-5 shrink-0 grad-bar"
                         />
                         <span className="text-[1.05rem] leading-relaxed">
                           <strong className="font-semibold">{item.label}.</strong> {item.detail}
@@ -82,7 +83,7 @@ export function Roles() {
                       <li key={item} className="flex items-start gap-4">
                         <span
                           aria-hidden="true"
-                          className="mt-[0.72em] h-px w-5 shrink-0 bg-flame"
+                          className="mt-[0.72em] h-px w-5 shrink-0 grad-bar"
                         />
                         <span className="text-[1.05rem] leading-relaxed">{item}</span>
                       </li>
