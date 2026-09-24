@@ -11,6 +11,13 @@ export const fee = {
   referral: "5%",
 };
 
+/**
+ * Only valid while the business actually holds GST registration. If it does
+ * not, replace with the registered entity type instead — the claim is
+ * verifiable against the government portal and must not be aspirational.
+ */
+export const legal = "GST registered";
+
 export const contact = {
   inbox: "support@3recruitment.com",
   candidate: "Rejected at the final round — my profile",

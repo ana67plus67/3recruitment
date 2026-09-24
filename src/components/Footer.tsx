@@ -1,4 +1,4 @@
-import { contact } from "../data/content";
+import { contact, legal } from "../data/content";
 import { Wordmark } from "./Wordmark";
 
 export function Footer() {
@@ -14,7 +14,7 @@ export function Footer() {
       >
         {contact.inbox}
       </a>
-      <p className="m-0 text-[0.9rem] text-mute">© 2026</p>
+      <p className="m-0 text-[0.9rem] text-mute">{legal} · © 2026</p>
     </footer>
   );
 }

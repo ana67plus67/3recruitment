@@ -56,6 +56,11 @@ individual. Paying a person for candidates out of their employer's pipeline is a
 rather than a referral: it puts them in breach with their employer and exposes us. The
 condition is stated on the page and must stay there.
 
+**`legal` in `content.ts` is a verifiable claim.** "GST registered" is checkable against
+the government portal in seconds, so it is valid only while registration is actually held.
+If it is not, replace it with the registered entity type — "a registered private limited
+company in India" — which establishes the same thing without asserting a tax status.
+
 ## Intake
 
 Every call to action is a `mailto:` to `support@3recruitment.com`. The audiences are
