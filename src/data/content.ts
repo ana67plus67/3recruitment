@@ -57,6 +57,16 @@ export const bar = {
   exclusion: "Recruiter screens, HR chats and scheduling calls do not count.",
 };
 
+/**
+ * The boundary. Drawn precisely: an honest read on a specific hiring process is
+ * recruitment and we do offer it, which is why the first sentence exists. Without
+ * it, "no career counselling" would read as a refusal to give feedback at all.
+ */
+export const scope = {
+  line: "Email only, and strictly recruitment.",
+  body: "We will tell you honestly how a hiring process went and where you stand in it. We do not offer career counselling, life advice, motivational support or mentoring, and we cannot help with anything outside a genuine hiring process. We are professional, and we ask the same in return.",
+};
+
 /** The one commitment we make to the reader. */
 export const promises = [
   "Everyone who writes to us gets a reply. It may take time, but hold on.",

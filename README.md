@@ -18,6 +18,7 @@ npm run preview  # serve the production build
 | `src/data/content.ts` | Every string on the site, plus the fee figures |
 | `src/index.css` | Design tokens and the single accent colour |
 | `src/components/` | One component per section, composed in `src/App.tsx` |
+| `src/data/privacy.ts` | The DPDP notice, rendered at `/privacy.html` |
 
 All copy lives in `content.ts`. Edit there rather than in components.
 
@@ -61,6 +62,17 @@ the government portal in seconds, so it is valid only while registration is actu
 If it is not, replace it with the registered entity type — "a registered private limited
 company in India" — which establishes the same thing without asserting a tax status.
 
+**The privacy notice is a legal document, not copy.** `src/data/privacy.ts` is written to
+be accurate about what we actually do — in particular that introducing a candidate means
+disclosing their data to an employer, which is the service and must stay stated plainly
+rather than buried. Update the `updated` date whenever it changes, and have it reviewed by
+an Indian data protection lawyer before relying on it.
+
+**`scope` draws a line, and the first sentence is load-bearing.** An honest read on a
+specific hiring process is recruitment and we do offer it. Without that sentence, "no
+career counselling" reads as a refusal to give any feedback, which contradicts the reply
+promise.
+
 ## Intake
 
 Every call to action is a `mailto:` to `support@3recruitment.com`. The audiences are
@@ -73,4 +85,5 @@ shipped yet: a form that silently discards submissions is worse than no form.
 ## Deploying
 
 Static build, no server. On Vercel: framework preset Vite, build `npm run build`, output
-`dist`.
+`dist`. Two pages are built — `index.html` and `privacy.html` — declared in
+`vite.config.ts`; a new page needs an entry added there or it will not be emitted.

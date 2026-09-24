@@ -14,7 +14,16 @@ export function Footer() {
       >
         {contact.inbox}
       </a>
-      <p className="m-0 text-[0.9rem] text-mute">{legal} · © 2026</p>
+      <p className="m-0 flex flex-wrap items-center gap-x-3 text-[0.9rem] text-mute">
+        <a
+          href="privacy.html"
+          className="underline decoration-rule decoration-2 underline-offset-4 transition-colors hover:text-ink hover:decoration-flame"
+        >
+          Your data
+        </a>
+        <span aria-hidden="true">·</span>
+        {legal} · © 2026
+      </p>
     </footer>
   );
 }
