@@ -29,12 +29,6 @@ export const hero = {
   action: "Share your profile",
 };
 
-export const steps = [
-  "You send us the loop you nearly won.",
-  "We verify it, then assess you ourselves.",
-  "You meet companies hiring at that bar.",
-];
-
 export const terms = [
   { figure: "\u20B90", note: "What you pay us, at every stage" },
   { figure: fee.total, note: "Paid by the company that hires you" },
