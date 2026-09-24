@@ -31,11 +31,15 @@ export const hero = {
 export const offers = [
   {
     line: "Fresh out of college? Send your resume. We keep it and come back when an internship fits.",
+    note: undefined,
     action: "Send your resume",
     subject: "fresher" as const,
   },
   {
     line: `Rejected someone good? We pay you ${fee.referral} of their salary when we place them.`,
+    // Paying an individual for their employer's candidates is a kickback, not a
+    // referral. The entity is the counterparty, and it has to be invoiceable.
+    note: "Paid to a registered company against an invoice, never to an individual.",
     action: "Refer a candidate",
     subject: "referral" as const,
   },

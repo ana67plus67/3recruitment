@@ -51,6 +51,11 @@ time on purpose. Do not tighten it into a stated turnaround, and do not delete i
 histories, so one is needed — a short page, linked from the footer, saying what is held,
 for how long, and how to have it deleted.
 
+**Referral payment goes to a registered company, against an invoice.** Never to an
+individual. Paying a person for candidates out of their employer's pipeline is a kickback
+rather than a referral: it puts them in breach with their employer and exposes us. The
+condition is stated on the page and must stay there.
+
 ## Intake
 
 Every call to action is a `mailto:` to `support@3recruitment.com`. The audiences are
