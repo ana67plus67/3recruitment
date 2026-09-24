@@ -18,7 +18,7 @@ npm run preview  # serve the production build
 | `src/data/content.ts` | Every string on the site, plus the fee figures |
 | `src/index.css` | Design tokens and the single accent colour |
 | `src/components/` | One component per section, composed in `src/App.tsx` |
-| `src/data/jobs.ts` | Live roles. Remove each one the day it is filled |
+| `src/data/jobs.ts` | Live roles, rendered compactly on the home page and in full at `/roles.html` |
 | `src/data/privacy.ts` | The DPDP notice, rendered at `/privacy.html` |
 
 All copy lives in `content.ts`. Edit there rather than in components.
@@ -78,7 +78,14 @@ promise.
 submit to. Remove a role the day it is filled — a board showing positions that no longer
 exist is worse than a short board, because candidates find out and stop trusting the rest
 of the page. Never invent a location, a salary band or a company detail; leave the field
-undefined and let the brief go out on request.
+undefined and let the brief go out on request, or set `partial: true` so the page says the
+brief is still being confirmed.
+
+**Client requirements are attributed to the client.** Note how the pedigree requirement on
+the SDE 2 role is worded: "the client requires…". We represent a brief accurately without
+adopting it as our own standard. That distinction matters more here than at most agencies,
+since the business exists for people filtered out for reasons unrelated to ability — and
+stating an institute filter in our own voice would contradict the rest of the site.
 
 ## Intake
 
@@ -92,5 +99,5 @@ shipped yet: a form that silently discards submissions is worse than no form.
 ## Deploying
 
 Static build, no server. On Vercel: framework preset Vite, build `npm run build`, output
-`dist`. Two pages are built — `index.html` and `privacy.html` — declared in
+`dist`. Three pages are built — `index.html`, `roles.html` and `privacy.html` — declared in
 `vite.config.ts`; a new page needs an entry added there or it will not be emitted.
