@@ -8,7 +8,6 @@
 
 /** Fee figures shown on the page. */
 export const fee = {
-  total: "10%",
   referral: "5%",
 };
 
@@ -28,11 +27,6 @@ export const hero = {
   line: "Send us your profile. We will find you the right opportunity.",
   action: "Share your profile",
 };
-
-export const terms = [
-  { figure: "\u20B90", note: "What you pay us, at every stage" },
-  { figure: fee.total, note: "Paid by the company that hires you" },
-];
 
 export const offers = [
   {
