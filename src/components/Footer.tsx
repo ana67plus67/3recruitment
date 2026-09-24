@@ -16,6 +16,15 @@ export function Footer() {
       </a>
       <p className="m-0 flex flex-wrap items-center gap-x-3 text-[0.9rem] text-mute">
         <a
+          href="roles.html"
+          target="_blank"
+          rel="noopener"
+          className="underline decoration-rule decoration-2 underline-offset-4 transition-colors hover:text-ink hover:decoration-flame"
+        >
+          Job board
+        </a>
+        <span aria-hidden="true">·</span>
+        <a
           href="privacy.html"
           className="underline decoration-rule decoration-2 underline-offset-4 transition-colors hover:text-ink hover:decoration-flame"
         >

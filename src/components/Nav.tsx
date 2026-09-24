@@ -10,10 +10,13 @@ export function Nav() {
       <div className="shell flex h-20 items-center justify-between gap-6">
         <Wordmark />
         <a
-          href="#roles"
+          href="roles.html"
+          target="_blank"
+          rel="noopener"
           className="text-[0.95rem] text-ink underline decoration-flame decoration-2 underline-offset-4"
         >
-          Open roles
+          Job board
+          <span className="sr-only"> (opens in a new tab)</span>
         </a>
         <a
           href={mailto(contact.hiring)}

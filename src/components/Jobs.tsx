@@ -26,9 +26,12 @@ export function Jobs() {
               <span aria-hidden="true">·</span>
               <a
                 href={`roles.html#${job.slug}`}
+                target="_blank"
+                rel="noopener"
                 className="text-ink underline decoration-rule decoration-2 underline-offset-4 transition-colors hover:decoration-flame"
               >
                 Full brief
+                <span className="sr-only"> for {job.title} (opens in a new tab)</span>
               </a>
             </p>
           </li>
@@ -37,12 +40,23 @@ export function Jobs() {
 
       <p className="m-0 mt-8 max-w-[52ch] text-[1.02rem] leading-relaxed text-mute">{jobsNote}</p>
 
-      <a
-        href={mailto(contact.hiring)}
-        className="mt-8 inline-block rounded-full border border-rule px-7 py-3.5 text-[1rem] text-ink transition-colors duration-200 hover:border-ink"
-      >
-        I'm hiring for a role
-      </a>
+      <div className="mt-8 flex flex-wrap items-center gap-3">
+        <a
+          href="roles.html"
+          target="_blank"
+          rel="noopener"
+          className="inline-block rounded-full bg-ink px-7 py-3.5 text-[1rem] text-paper transition-opacity duration-200 hover:opacity-80"
+        >
+          Open the job board
+          <span className="sr-only"> (opens in a new tab)</span>
+        </a>
+        <a
+          href={mailto(contact.hiring)}
+          className="inline-block rounded-full border border-rule px-7 py-3.5 text-[1rem] text-ink transition-colors duration-200 hover:border-ink"
+        >
+          I'm hiring for a role
+        </a>
+      </div>
     </section>
   );
 }
