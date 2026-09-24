@@ -42,7 +42,7 @@ export const offers = [
 ];
 
 export const bar = {
-  rule: "Five rounds or more, and you reached the decision.",
+  rule: "You reached the final round, and the offer went to someone else.",
   exclusion: "Recruiter screens, HR chats and scheduling calls do not count.",
 };
 

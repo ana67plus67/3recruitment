@@ -40,8 +40,9 @@ redesign.
 there are none yet, and the site says so. When real numbers exist, add them with the period
 they cover and the sample size.
 
-**The admission bar is exact.** Five rounds or more, reaching the decision, with recruiter
-screens, HR chats and scheduling calls excluded. Do not soften either half.
+**The admission bar is exact.** Reaching the final round, with recruiter screens, HR chats
+and scheduling calls excluded. The exclusion is what stops "final round" meaning a chat
+with HR, so it carries the whole rule — do not drop it.
 
 **`promises[0]` is a commitment, not copy.** It promises everyone a reply, worded to buy
 time on purpose. Do not tighten it into a stated turnaround, and do not delete it.
