@@ -46,6 +46,10 @@ screens, HR chats and scheduling calls excluded. Do not soften either half.
 **`promises[0]` is a commitment, not copy.** It promises everyone a reply, worded to buy
 time on purpose. Do not tighten it into a stated turnaround, and do not delete it.
 
+**There is no privacy notice yet.** The site invites people to email resumes and interview
+histories, so one is needed — a short page, linked from the footer, saying what is held,
+for how long, and how to have it deleted.
+
 ## Intake
 
 Every call to action is a `mailto:` to `support@3recruitment.com`. The audiences are

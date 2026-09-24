@@ -58,11 +58,7 @@ export const bar = {
   exclusion: "Recruiter screens, HR chats and scheduling calls do not count.",
 };
 
+/** The one commitment we make to the reader. */
 export const promises = [
-  // First, because it is the only promise made to the reader rather than about us.
   "Everyone who writes to us gets a reply. It may take time, but hold on.",
-  "You approve every introduction.",
-  "We email one person, and only if you ask us to.",
-  "We never sell your profile.",
-  "We started in 2026 and have placed nobody yet.",
 ];
